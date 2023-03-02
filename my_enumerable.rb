@@ -11,7 +11,7 @@ module MyEnumerable
 
   def filter(&block)
     arr = []
-    @list.each {|args| arr<<args if block.call(args)}
+    @list.each { |args| arr << args if block.call(args) }
     arr
   end
 end
